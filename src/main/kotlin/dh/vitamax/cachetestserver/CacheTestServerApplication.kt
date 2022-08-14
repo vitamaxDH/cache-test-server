@@ -23,7 +23,7 @@ class CacheTestServerApplication{
         val randomString = UUID.randomUUID().toString().take(8).uppercase()
         return Battery(
             id = "BAT$randomString",
-            soc = Math.random() * 99
+            soc = (Math.random() * 99).toFloat()
         )
     }
 }

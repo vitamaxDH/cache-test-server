@@ -9,8 +9,6 @@ class BatteryCacheService(
     private val batteryRepository: BatteryRepository
 ){
 
-    private var count: Int = 0
-
     @Cacheable("allBatteryIds")
     fun findAllBatteryIds(): List<String> {
         return batteryRepository.findAll().map { it.id }
