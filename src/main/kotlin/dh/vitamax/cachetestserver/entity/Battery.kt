@@ -11,5 +11,5 @@ class Battery (
     val id: String,
 
     @Column(columnDefinition="Decimal(10,2)")
-    val soc: Double
+    var soc: Float
 )
